@@ -1,14 +1,14 @@
 require 'yaml'
 
 def load_library(path)
-  
+
   emoticons = YAML.load_file(path)
      translator = {}
   emoticons.each do |key,value|
     translator[key] = {}
        translator[key][:english] = value[0]
       translator[key][:japanese] = value[1]
-    
+
 end
 translator
   # code goes here
